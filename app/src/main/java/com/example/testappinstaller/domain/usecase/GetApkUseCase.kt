@@ -1,10 +1,10 @@
 package com.example.testappinstaller.domain.usecase
 
-import com.example.testappinstaller.domain.repository.GoogleRepository
-import java.io.File
+import com.example.testappinstaller.domain.repository.Repository
+import javax.inject.Inject
 
-class GetFileUseCase(private val repository: GoogleRepository) {
-    suspend fun getFile(url: String): File{
+class GetApkUseCase @Inject constructor(private val repository: Repository) {
+    suspend fun getFile(url: String): Long{
         return repository.getApkFile(url = url)
     }
 }

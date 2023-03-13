@@ -7,19 +7,53 @@
     android:gravity="center"
     tools:context=".app.MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/recViewLinks"/>
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="26sp"
+        android:textColor="#14A5E8"
+        android:textStyle="bold|italic"
+        tools:text="First link"
+        android:paddingBottom="20dp"
+        android:id="@+id/firstLink"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="26sp"
+        android:textColor="#14A5E8"
+        android:textStyle="bold|italic"
+        tools:text="Second link"
+        android:paddingBottom="20dp"
+        android:id="@+id/secondLink"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="26sp"
+        android:textColor="#14A5E8"
+        android:textStyle="bold|italic"
+        tools:text="Third link"
+        android:paddingBottom="20dp"
+        android:id="@+id/thirdLink"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnSearch"
-        android:text="Find file"
+        android:id="@+id/btnInstallIntent"
+        android:text="@string/installation_via_intent"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInstallPackInstaller"
+        android:text="@string/installation_via_package_installer"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
